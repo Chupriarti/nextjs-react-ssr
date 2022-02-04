@@ -15,12 +15,6 @@ const Index = () => {
                         background: orange;
                         padding: 15px;
                     }
-                    .link {
-                        text-decoration: none;
-                        color: white;
-                        font-size: 20px;
-                        margin: 10px;
-                    }
                 `}
             </style>
         </div>
