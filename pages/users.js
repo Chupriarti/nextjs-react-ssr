@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 
 const Users = () => {
@@ -13,7 +14,9 @@ const Users = () => {
                     <li
                         key={user.id}
                     >
-                        {user.name}
+                        <Link href={`/users/${user.id}`}>
+                            <a>{user.name}</a>
+                        </Link>
                     </li>    
                 )}
             </ul>
