@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-export default function () {
+export default function User () {
     const {query} = useRouter()
     return (
         <div>
