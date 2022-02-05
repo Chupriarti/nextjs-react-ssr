@@ -1,11 +1,8 @@
 import Link from "next/link"
 import React from "react"
 
-const Users = () => {
-    const [users, setUsers] = React.useState([
-        {id: 1, name: 'alex'},
-        {id: 2, name: 'maxim'}
-    ])
+const Users = ({users}) => {
+
     return (
         <div>
             <h1>Users page</h1>
@@ -25,3 +22,11 @@ const Users = () => {
 }
 
 export default Users
+
+export async function getStaticProps(context) {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users')
+    const users = await response.json()
+    return {
+        props: {users}, // will be passed to the page component as props
+    }
+}
