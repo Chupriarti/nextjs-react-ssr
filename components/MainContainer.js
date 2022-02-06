@@ -1,9 +1,13 @@
+import A from "./A"
 
 const MainContainer = ({children}) => {
     return (
-        <div>
-
-        </div>
+        <>
+            <div className="navbar">
+                <A href={"/"} text={"Main page"} />
+                <A href={"/users"} text={"Users"} />
+            </div>
+        </>
     )
 }
 
