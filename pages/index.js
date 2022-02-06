@@ -1,29 +1,14 @@
 import Head from "next/head"
 import Link from "next/link"
 import A from "../components/A"
+import MainContainer from "../components/MainContainer"
 
 const Index = () => {
     return (
         <>
-            <Head>
-                <meta keywords="testing nextjs"></meta>
-                <title>Main page</title>
-            </Head>
-            <div>
-                <div className="navbar">
-                    <A href={"/"} text={"Main page"} />
-                    <A href={"/users"} text={"Users"} />
-                </div>
+            <MainContainer keywords={"main page"}>
                 <h1>Main page</h1>
-                <style jsx>
-                    {`
-                        .navbar {
-                            background: orange;
-                            padding: 15px;
-                        }
-                    `}
-                </style>
-            </div>
+            </MainContainer>
         </>
     )
 }
