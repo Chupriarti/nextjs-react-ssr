@@ -7,6 +7,9 @@ const MainContainer = ({children}) => {
                 <A href={"/"} text={"Main page"} />
                 <A href={"/users"} text={"Users"} />
             </div>
+            <div>
+                {children}
+            </div>
         </>
     )
 }
