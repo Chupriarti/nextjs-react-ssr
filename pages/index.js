@@ -8,14 +8,6 @@ const Index = () => {
         <>
             <MainContainer>
                 <h1>Main page</h1>
-                <style jsx>
-                    {`
-                        .navbar {
-                            background: orange;
-                            padding: 15px;
-                        }
-                    `}
-                </style>
             </MainContainer>
         </>
     )

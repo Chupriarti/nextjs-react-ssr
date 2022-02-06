@@ -15,6 +15,14 @@ const MainContainer = ({children, keywords}) => {
             <div>
                 {children}
             </div>
+            <style jsx>
+                {`
+                    .navbar {
+                        background: orange;
+                        padding: 15px;
+                    }
+                `}
+            </style>
         </>
     )
 }
